@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collaborative Whiteboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Collaborative Whiteboard</h1>
+    </header>
+
+    <div id="toolbar">
+      <button id="drawMode">Draw</button>
+      <button id="textMode">Text</button>
+      <input type="color" id="colorPicker" value="#000000" />
+      <button id="clearBoard">Clear Board</button>
+
+      <!-- New Shape Buttons -->
+      <button id="rectMode">Rectangle</button>
+      <button id="circleMode">Circle</button>
+      <button id="lineMode">Line</button>
+    </div>
+
+    <div id="whiteboardContainer">
+      <canvas id="whiteboard"></canvas>
+    </div>
+
+    <script src="js/whiteboard.js"></script>
+    <script src="js/drawing.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/shapes.js"></script>
+    <!-- New shapes.js script -->
+    <script src="js/collaboration.js"></script>
+  </body>
+</html>

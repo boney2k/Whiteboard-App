@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+#toolbar {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+#toolbar button,
+#toolbar input {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+#whiteboardContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+}
+
+canvas {
+  background-color: white;
+  border: 2px solid #ccc;
+  display: block;
+}
+#toolbar button {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+/* Optional: Different color for shape buttons */
+#rectMode,
+#circleMode,
+#lineMode {
+  background-color: #d4d4d4;
+  border: none;
+  cursor: pointer;
+}
+
+#rectMode:hover,
+#circleMode:hover,
+#lineMode:hover {
+  background-color: #b0b0b0;
+}
